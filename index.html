@@ -1,0 +1,163 @@
+<html>
+
+<head>
+  <title>CEB #02</title>
+  <link rel="stylesheet" href="https://userceb.github.io/ceb-perth/css/font-awesome.min.css">
+  <link
+    href='http://fonts.googleapis.com/css?family=Dr+Sugiyama|Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic'
+    rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./assets/stylesheets/grid.css">
+    <link rel="stylesheet" href="./assets/stylesheets/style.css">
+</head>
+
+<body>
+  <div class="content-wrapper">
+    <div class="mobile-container">
+      <div class="topnav">
+        <a href="#home" class="active"><img src="./assets/images/logo.png"></a>
+        <div id="myLinks">
+          <a href="#news">HOME</a>
+          <a href="#contact">ABOUT</a>
+          <a href="#about">CONTACT</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="menuBurger()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <section id="saila">
+      <header>
+        <div class="header-logo">
+          <img src="./assets/images/logo.png">
+        </div>
+        <div class="header-list" id="topnav">
+          <a href="#">CONTACT</a>
+          <a href="#">ABOUT</a>
+          <a href="#">HOME</a>
+          <a href="javascript:void(0);" class="icon" onclick="myfunction()"><i class="fa fa-bars fa-2x"></i></a>
+        </div>
+      </header>
+    
+      <div class="top-wrapper">
+        <h1>Meet CEB,</h1>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus <i><b>free</b></i> too!</h3>
+    
+        <div class="img-wrapper">
+          <img id="box" src="./assets/images/header1.png">
+        </div>
+    
+        <div class="btn-wrapper">
+          <a href="#" class="btn download">Download<span class="fa fa-cloud-download"></span></a>
+        </div>
+      </div>
+    </section>
+    <section id="main1">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6" style="margin-bottom: 30px;">
+            <h2>A Long Winded Header</h2><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. </p><br>
+            <blockquote>
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+              id est laborum.
+            </blockquote>
+            <br>
+            <a href="#" class="btn">Say Hello <i class="fa fa-envelope"></i></a>
+          </div>
+          <div class="col-sm-5" style="visibility: visible;">
+            <img class="main1-img img-responsive pull-right" src="./assets/images/main1.png" alt="Main1 Image">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="azra">
+      <div class="main2">
+        <div class="container">
+          <div class="main2-txt">
+            <h2>Another Header Section </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur.</p>
+            <a href="#" class="btn">View On Dribbble <i class="fa fa-dribbble"></i></a>
+          </div>
+    
+          <img class="main2-img" src="./assets/images/main2.png">
+    
+        </div>
+      </div>
+    </section>
+    <section id="message">
+      <div class="container">
+        <h2 class="message-title">
+          Another Section Header
+        </h2>
+    
+        <a href="#" class="btn">
+          Buy Me A Coffee
+          <i class="fa fa-beer"></i>
+        </a>
+    
+      </div>
+    </section>
+    <section id="randu">
+      <div class="btn-wrapper">
+        <a href="#" class="btn">
+          <i class="fa fa-dribbble fa-2x"></i>
+        </a>
+        <a href="#" class="btn">
+          <i class="fa fa-facebook fa-2x"></i>
+        </a>
+        <a href="#" class="btn">
+          <i class="fa fa-twitter fa-2x"></i>
+        </a>
+        <a href="#" class="btn">
+          <i class="fa fa-github fa-2x"></i>
+        </a>
+      </div>
+      <form class="form-inline" role="form">
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Enter email">
+        </div>
+        <button type="submit" class="btn2">Sign in</button>
+      </form>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="text-center">
+          <p>
+            <small>
+              Copyright © CEB #02. All rights reserved.
+            </small>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $('#box').hide().show(1000);
+    function myfunction() {
+      var x = document.getElementById("topnav");
+      if (x.className === "header-list") {
+        x.className += " responsive";
+      } else {
+        x.className = "header-list";
+      };
+    };
+    function menuBurger() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
